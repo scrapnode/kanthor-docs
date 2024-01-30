@@ -4,12 +4,14 @@ sidebar_position: 1
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ReactPlayer from 'react-player'
+import demo from './assets/video/demo.webm'
 
 # Introduction
 
-Kanthor is an Open-source Webhook Gateway that help you manage message deliver easier. The system is focusing on ship the best experirence to the developer who using this system and the devops engineer who operate this system.
+Kanthor is an open-source Webhook Gateway designed to streamline message delivery management. The system prioritizes delivering the best experience to both developers utilizing the system and the DevOps engineers overseeing its operation.
 
-Kanthor principles are heavily inspired by the book **Designing Data-Intensive Applications** what describes which characteristics of a data-instensive system should have
+Kanthor's principles draw heavily from the book **Designing Data-Intensive Applications** which outlines essential characteristics for data-intensive systems:
 
 - Reliability: Tolerating hardware and software faults as well as human errors
 - Scalability: Measuring load and performance as well as latency percentiles and throughput
@@ -32,12 +34,16 @@ curl https://raw.githubusercontent.com/scrapnode/kanthor/master/docker-compose.l
 docker compose up -d
 ```
 
-Then you can access to the Kanthor system via those interfaces
+You can access the Kanthor system through various interfaces:
 
-- [Kanthor Playground](http://localhost:9081): The Kanthor playground that is built on top of the [Kanthor SDK for Golang](https://github.com/scrapnode/kanthor-sdk-go). So you can place with it to test the functionability or reference to it as a guideline of how to using the Kanthor SDK
-- [Kanthor Console](http://localhost:9082): The Kanthor Console UI that allow you configure the customer portal. Default user is `admin@kanthorlabs.com` and default password is `changemenow`
-- [Kanthor SDK OpenAPI](http://localhost:8180/swagger/index.html): The OpenAPI document UI of all of the available API in the Kanthor SDK service
-- [Kanthor Portal OpenAPI](http://localhost:8280/swagger/index.html): The OpenAPI document UI of all of the available API in the Kanthor Portal service
+- [Kanthor Playground](http://localhost:9081): Utilize the Kanthor Playground, built on the [Kanthor SDK for Golang](https://github.com/scrapnode/kanthor-sdk-go), to experiment with functionalities or refer to it as a guide on how to use the Kanthor SDK.
+- [Kanthor Console](http://localhost:9082): Access the Kanthor Console UI to configure the customer portal. The default credentials are:
+
+  - Username: `admin@kanthorlabs.com`
+  - Password: `changemenow`
+
+- [Kanthor SDK OpenAPI](http://localhost:8180/swagger/index.html): Explore the OpenAPI document UI containing all available APIs in the Kanthor SDK service.
+- [Kanthor Portal OpenAPI](http://localhost:8280/swagger/index.html): Access the OpenAPI document UI featuring all available APIs in the Kanthor Portal service.
 
 ### Screenshots
 
@@ -50,18 +56,24 @@ values={[
 {label: "Portal OpenAPI", value: "portal"},
 ]}>
 <TabItem value="playground">
-![Playground](./img/introduction/playground.png)
+![Playground](./assets/img/introduction/playground.png)
 </TabItem>
 
 <TabItem value="console">
-![Console](./img/introduction/console.png)
+![Console](./assets/img/introduction/console.png)
 </TabItem>
 
 <TabItem value="sdk">
-![SDK OpenAPI](./img/introduction/sdk.png)
+![SDK OpenAPI](./assets/img/introduction/sdk.png)
 </TabItem>
 
 <TabItem value="portal">
-![Portal OpenAPI](./img/introduction/portal.png)
+![Portal OpenAPI](./assets/img/introduction/portal.png)
 </TabItem>
 </Tabs>
+
+## Demo Video
+
+There is a demo video showcasing the functionality of the Kanthor Webhook System using Kanthor Playground and Kanthor Console.
+
+<ReactPlayer controls url={demo} width="100%" />
