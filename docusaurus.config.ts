@@ -39,14 +39,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "hhttps://github.com/kanthorlabs/kanthor-docs/edit/main/docs/",
+            "https://github.com/kanthorlabs/kanthor-docs/edit/main/docs/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "hhttps://github.com/kanthorlabs/kanthor-docs/edit/main/docs/",
+            "https://github.com/kanthorlabs/kanthor-docs/edit/main/docs/",
         },
         theme: {
           customCss: "./src/css/custom.css",
