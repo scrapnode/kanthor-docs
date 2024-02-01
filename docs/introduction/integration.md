@@ -198,3 +198,26 @@ If you cannot locate your message, try adding a unique property to the message b
 :::
 
 ![Printout](./assets/img/integration/printout.png)
+
+## Viewing data on Kanthor Console
+
+<Tabs
+defaultValue="application"
+values={[
+{label: "Application", value: "application"},
+{label: "Endpoint", value: "endpoint"},
+]}>
+<TabItem value="application">
+
+![Application](./assets/img/integration/application.png)
+![Application Message](./assets/img/integration/application-message.png)
+
+</TabItem>
+
+<TabItem value="endpoint">
+
+![Endpoint](./assets/img/integration/endpoint.png)
+![Endpoint Message](./assets/img/integration/endpoint-message.png)
+
+</TabItem>
+</Tabs>
