@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';
@@ -7,21 +7,13 @@ import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player'
 import demo from './assets/video/demo.webm'
 
-# Introduction
+# Quickstart
 
-Kanthor is an open-source Webhook Gateway designed to streamline message delivery management. The system prioritizes delivering the best experience to both developers utilizing the system and the DevOps engineers overseeing its operation.
+In this post, we'll guide you through setting up a Kanthor system on your local machine, allowing you to interact with its exposed interfaces. Additionally, we've included screenshots and a demo video to demonstrate how to utilize these interfaces once you've completed the installation successfully.
 
-Kanthor's principles draw heavily from the book **Designing Data-Intensive Applications** which outlines essential characteristics for data-intensive systems:
+## Installation
 
-- Reliability: Tolerating hardware and software faults as well as human errors
-- Scalability: Measuring load and performance as well as latency percentiles and throughput
-- Maintainability: Operatbility, simplicity and evolvability
-
-## Setup
-
-### Docker Compose
-
-The easier way to boostrap the Kanthor system in your machine is via Docker Compose
+The easiest way to set up the Kanthor system on your machine is through Docker Compose
 
 ```bash
 # create project directory
@@ -45,7 +37,7 @@ You can access the Kanthor system through various interfaces:
 - [Kanthor SDK OpenAPI](http://localhost:8180/swagger/index.html): Explore the OpenAPI document UI containing all available APIs in the Kanthor SDK service.
 - [Kanthor Portal OpenAPI](http://localhost:8280/swagger/index.html): Access the OpenAPI document UI featuring all available APIs in the Kanthor Portal service.
 
-### Screenshots
+## Screenshots
 
 <Tabs
 defaultValue="playground"
@@ -56,19 +48,27 @@ values={[
 {label: "Portal OpenAPI", value: "portal"},
 ]}>
 <TabItem value="playground">
+
 ![Playground](./assets/img/introduction/playground.png)
+
 </TabItem>
 
 <TabItem value="console">
+
 ![Console](./assets/img/introduction/console.png)
+
 </TabItem>
 
 <TabItem value="sdk">
+
 ![SDK OpenAPI](./assets/img/introduction/sdk.png)
+
 </TabItem>
 
 <TabItem value="portal">
+
 ![Portal OpenAPI](./assets/img/introduction/portal.png)
+
 </TabItem>
 </Tabs>
 
