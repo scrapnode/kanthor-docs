@@ -49,25 +49,25 @@ values={[
 ]}>
 <TabItem value="playground">
 
-![Playground](./assets/img/introduction/playground.png)
+![Playground](./assets/img/quickstart/playground.png)
 
 </TabItem>
 
 <TabItem value="console">
 
-![Console](./assets/img/introduction/console.png)
+![Console](./assets/img/quickstart/console.png)
 
 </TabItem>
 
 <TabItem value="sdk">
 
-![SDK OpenAPI](./assets/img/introduction/sdk.png)
+![SDK OpenAPI](./assets/img/quickstart/sdk.png)
 
 </TabItem>
 
 <TabItem value="portal">
 
-![Portal OpenAPI](./assets/img/introduction/portal.png)
+![Portal OpenAPI](./assets/img/quickstart/portal.png)
 
 </TabItem>
 </Tabs>

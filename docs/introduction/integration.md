@@ -105,8 +105,8 @@ ep, err := sdk.Endpoint.Create(ctx, &kanthorsdk.EndpointCreateReq{
     // using the POST method
     Method: http.MethodPost,
     Name:   "POST endpoint",
-    // using an dummy endpoint demo
-    Uri:    "https://httpbin.org/post",
+    // using an dummy endpoint to demo
+    Uri:    "https://kanthor-playground.scrapnode.com/printout",
 })
 if err != nil {
     panic(err)
@@ -169,7 +169,7 @@ defer cancel()
 _, err = sdk.Message.Create(ctx, &kanthorsdk.MessageCreateReq{
     AppId:   app.Id,
     Type:    "testing.playground",
-    Body:    map[string]interface{}{"ping": +time.Now().UnixMilli()},
+    Body:    map[string]interface{}{"ping": +time.Now().UnixNano()},
     Headers: map[string]string{"X-Powered-By": "Kanthor SDK"},
 })
 if err != nil {
@@ -188,3 +188,13 @@ if err != nil {
 </TabItem>
 
 </Tabs>
+
+After sending the message, you can navigate to our dummy website, [Kanthor Printout](https://kanthor-playground.scrapnode.com/printout), to verify whether the message was successfully delivered to the endpoint. We've included a screenshot to give you a visual representation of what it looks like.
+
+:::tip
+
+If you cannot locate your message, try adding a unique property to the message body. Then, use **Ctrl + F** to search for that value. It's not a convenient, but it's work ;)
+
+:::
+
+![Printout](./assets/img/integration/printout.png)
